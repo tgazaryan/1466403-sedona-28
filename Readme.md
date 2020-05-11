@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Татьяна Газарян](https://up.htmlacademy.ru/htmlcss/28/user/1466403).
-* Наставник: `Неизвестно`.
+* Наставник: `Ирина Шашева`(https://htmlacademy.ru/profile/loyso).
 
 ---
 
