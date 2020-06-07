@@ -8,7 +8,7 @@
     <header>
       <nav>
         <a href="index.html">
-          <img src="img/sedona-logo.svg"alt="">
+          <img src="img/sedona-logo.svg" alt="" width="138" height="70">
         </a>
         <ul>
           <li><a href="#">Информация</a></li>
@@ -21,15 +21,49 @@
     <main>
         <h1>Гостиницы Седоны</h1>
         <section>
-            <h2>Выбор гостиниц</h2>
-            <!--Здесь будет форма фильтра-->
+          <h2>Параметры поиска</h2>
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+             <ul>
+               <li>Бассейн</li>
+               <li>Парковка</li>
+               <li>Wi-Fi</li>
+             </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+             <ul>
+               <li>Гостиница</li>
+               <li>Мотель</li>
+               <li>Апартаменты</li>
+             </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки (Р):</legend>
+            <!--Здесь будет форма с ползунками-->
+          </fieldset>
+          <button type="button">Показать</button>
+        </section>
+        <section>
+            <h2>Сортировка результатов</h2>
+            <div>
+              <span>Найдено:</span>
+            </div>
+            <div>
+              <span>Сортировка:</span>
+              <ul>
+                <li><a href="#">По цене</a></li>
+                <li><a href="#">По типу</a></li>
+                <li><a href="#">По рейтингу</a></li>
+              </ul>
+            </div>
         </section>
         <section>
             <h2>Список найденных гостиниц</h2>
             <ul>
                 <li>
                     <h3>Amara Resort&Spa</h3>
-                    <p><img scr="img/amara-resort.jpg" width="135" height="90" alt="Amara Resort&Spa"></p>
+                    <p><img src="img/amara-resort.jpg" width="135" height="90" alt="Amara Resort&Spa"></p>
                     <P>Гостиница</P>
                     <p>От 4000р.</p>
                     <p>Рейтинг: 8,5</p>
@@ -38,7 +72,7 @@
                 </li>
                 <li>
                     <h3>Desert Quail Inn</h3>
-                    <p><img scr="img/desert-quail.jpg" width="135" height="90" alt="Desert Quail Inn"></p>
+                    <p><img src="img/desert-quail.jpg" width="135" height="90" alt="Desert Quail Inn"></p>
                     <P>Мотель</P>
                     <p>От 3000р.</p>
                     <p>Рейтинг: 8,9</p>
@@ -47,13 +81,13 @@
                 </li>
                 <li>
                     <h3>Villas at Poco Diablo</h3>
-                    <p><img scr="img/poco-diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo"></p>
+                    <p><img src="img/poco-diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo"></p>
                     <P>Апартаменты</P>
                     <p>От 2000р.</p>
                     <p>Рейтинг: 9,2</p>
                     <a href="#">Подробнее</a>
                     <button type="button">Забронировать</button>
-                </li>>
+                </li>
             </ul>
         </section>
     </main>
@@ -61,7 +95,7 @@
       <section>
         <h2>Как с нами связаться</h2>
         <p>#visitsedona<br>
-          <a href="tel:+74956660166">Тел: +7(495)666-01-66</a>
+          Тел:<a href="tel:+74956660166"> +7(495)666-01-66</a>
         </p>
       </section>
       <section>
