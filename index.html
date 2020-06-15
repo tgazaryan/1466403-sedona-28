@@ -8,7 +8,7 @@
     <header>
       <nav>
         <a>
-          <img src="img/sedona-logo.svg" alt="" width="138" height="70">
+          <img src="img/sedona-logo.svg" alt="Седона" width="138" height="70">
         </a>
         <ul>
           <li><a href="#">Информация</a></li>
@@ -19,13 +19,13 @@
       </nav>
     </header>
     <main>
-      <h1>Добро пожаловать в Седону!</h1>
+      <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
       <section>
         <p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
         <p>Рассмотрим причины, почему Седона круче, чем Гранд Каньон!</p>
       </section>
       <section>
-        <h2>Причины нас посетить</h2>
+        <h2 class="visually-hidden">Причины нас посетить</h2>
         <div>
           <div>
             <h3>Настоящий городок</h3>
@@ -33,7 +33,7 @@
             Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <div>
-            <img src="img/sedona-city.jpg" alt="" width="800" height="256">
+            <img src="img/sedona-city.jpg" alt="Город Седона" width="800" height="256">
           </div>
         </div>
         <div>
@@ -54,7 +54,7 @@
         </div>
         <div>
           <div>
-            <img src="img/devils-bridge.jpg" alt="" width="800" height="256">
+            <img src="img/devils-bridge.jpg" alt="Мост Дьявола" width="800" height="256">
           </div>
           <div>
             <h3>Там есть Мост Дьявола</h3>
@@ -89,17 +89,36 @@
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <!--Здесь будет форма с календарем-->
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+          <label for="arrival-date">Дата заезда:</label> 
+          <input id="arrival-date" type="text" name="date" placeholder="24 апреля 2017"> 
+          </p>
+          <p>
+          <label for="departure-date">Дата выезда:</label>
+          <input id="departure-date" type="text" name="date" placeholder="4 июля 2017">
+          </p>
+          <p>
+          <label for="adult">Взрослые:</label>
+          <input id="adult" type="number" value="2">
+          </p>
+          <p>
+          <label for="child">Дети:</label>
+          <input id="child" type="number" value="0">
+          </p>
+          <button type="submit">Найти</button>
+        </form>
       </section>
     </main>
     <footer>
       <section>
-        <h2>Как с нами связаться</h2>
+        <h2 class="visually-hidden">Как с нами связаться</h2>
         <p>#visitsedona<br>
         Тел:<a href="tel:+74956660166"> +7(495)666-01-66</a>
         </p>
       </section>
       <section>
-        <h2>Мы в соцсетях</h2>
+        <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul>
           <li>
             <a href="#">Вконтакте</a>
