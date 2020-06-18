@@ -92,19 +92,29 @@
         <form action="https://echo.htmlacademy.ru" method="post">
           <p>
            <label for="arrival-date">Дата заезда:</label> 
-           <input id="arrival-date" type="text" name="date" placeholder="24 апреля 2017"> 
+           <input id="arrival-date" type="text" name="date" placeholder="24 апреля 2017">
+           <div>
+             <img src="img/calendar.svg">
+           </div> 
           </p>
           <p>
            <label for="departure-date">Дата выезда:</label>
-           <input id="departure-date" type="text" name="date" placeholder="4 июля 2017">
+           <input id="departure-date" type="text" name="date" placeholder="4 июля 2017"> 
+           <div>
+             <img src="img/calendar.svg">
+           </div>
           </p>
           <p>
            <label for="adult">Взрослые:</label>
-           <input id="adult" type="number" value="2"><img src="">
+           <button type="button"><img src="img/minus-item.svg"></button>
+           <input id="adult" type="number" value="2">
+           <button type="button"><img src="img/add-item.svg"></button>
           </p>
           <p>
            <label for="child">Дети:</label>
+           <button type="button"><img src="img/minus-item.svg"></button>
            <input id="child" type="number" value="0">
+           <button type="button"><img src="img/add-item.svg"></button>
           </p>
           <button type="submit">Найти</button>
         </form>
@@ -121,13 +131,13 @@
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul>
           <li>
-            <a href="#">Вконтакте</a>
+            <a href="#" class="visually-hidden">Вконтакте</a>
           </li>
           <li>
-            <a href="#">Фейсбук</a>
+            <a href="#" class="visually-hidden">Фейсбук</a>
           </li>
           <li>
-            <a href="#">Инстаграм</a>
+            <a href="#" class="visually-hidden">Инстаграм</a>
           </li>
         </ul>
       </section>
