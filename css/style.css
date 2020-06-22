@@ -1,0 +1,307 @@
+/* Variables */
+:root {
+    --basic-white: #FFFFFF;
+    --basic-black: #000000;
+    --basic-darkgrey: #333333;
+    --basic-grey: #666666;
+    --basic-lightgrey: #EEEEEE;
+    --basic-filling: #f2f2f2;
+    --basic-blue: #81B3D2;
+    --basic-mid-blue: #669EC0;
+    --basic-dark-blue: #5496BD;
+    --basic-brown: #766357;
+    --basic-mid-brown: #604E43;
+    --basic-dark-brown: #503E33; 
+    --checkbox: #6a6a6a;
+}
+
+/*Global*/
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family:'PT Sans', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: var(--basic-darkgrey);
+    background-color: var(--basic-filling);
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Wrapper*/
+.body-wrapper {
+    background-color: var(--basic-white);
+}
+
+/*Main navigation*/
+.main-navigation {
+    font-size: 14px;
+    color: var(--basic-black);
+    background-color: transparent;
+}
+
+.site-navigation {
+    list-style: none;
+}
+.site-navigation a {
+    color: var(--basic-black);
+    font-weight: 700;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: var(--basic-blue);
+}
+.site-navigation a:active {
+    color: var(--basic-white);
+    mix-blend-mode: normal;
+    opacity: 0.3;
+}
+
+/*Main footer*/
+.main-footer {
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+}
+
+.footer-contacts {
+    color: var(--basic-black);
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.footer-contacts a {
+    color: var(--basic-black);
+}
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+    color: var(--basic-blue);
+}
+
+.footer-social {
+    text-align: center;
+}
+.footer-social ul {
+    list-style:none;
+}
+
+/*Social button*/
+.social-button {
+    color:var(--basic-blue);
+}
+
+.social-button:hover,
+.social-button:focus {
+    background-color: var(--basic-mid-blue);
+}
+.social-button:active {
+    background-color: var(--basic-dark-blue);
+}
+
+/* Index Features*/
+.features-promo {
+    background-color: var(--basic-white);
+    text-align: center;
+}
+
+.features-blue-row {
+    background-color: var(--basic-blue);
+    color: var(--basic-white);
+    text-align: center;
+}
+
+.features-grey-row {
+    background-color: var(--basic-lightgrey);
+    color: var(--basic-darkgrey);
+    text-align: center;
+}
+.features-grey-row ul {
+    list-style: none;
+}
+
+.features-white-row {
+    background-color: var(--basic-white);
+    color: var(--basic-darkgrey);
+    text-align: center;
+}
+.features-white-row ul {
+    list-style: none;
+}
+
+/*Search*/
+.interested {
+    text-align: center;
+}
+
+.search-form .btn {
+    font: inherit;
+    font-weight: 700;
+    text-align: center;
+    color: var(--basic-white);
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: none;
+}
+
+.search-form .search-1 {
+    background-color: var(--basic-brown);
+}
+.search-form .search-1:hover,
+.search-form .search-1:focus {
+    background-color: var(--basic-mid-brown);
+}
+.search-form .search-1:active {
+    background-color: var(--basic-dark-brown);
+}
+
+.search-body {
+    display: none;
+}
+
+/*Catalogue*/
+.catalogue-list {
+    list-style: none;
+}
+
+.catalogue-item {
+    background-color: var(--basic-white);
+}
+
+.catalogue-item .rating {
+    background-color: var(--basic-filling);
+}
+
+.catalogue-item a {
+    color: var(--basic-black);
+}
+.catalogue-item a:hover,
+.catalogue-item a:focus {
+    color: var(--basic-blue);
+}
+.catalogue-item a:active {
+    color: var(--basic-black);
+    mix-blend-mode: normal;
+    opacity: 0.3;
+}
+.catalogue-item .btn{
+   font: inherit;
+   font-weight: 700;
+   text-transform: uppercase;
+   text-align: center;
+   vertical-align: middle;
+   color: var(--basic-white);
+   border: none;
+}
+
+.catalogue-item .more{
+    background-color: var(--basic-blue);
+}
+.catalogue-item .more:hover,
+.catalogue-item .more:focus {
+    color: var(--basic-white);
+    background-color: var(--basic-mid-blue);
+}
+
+.catalogue-item .book {
+    background-color: var(--basic-brown);
+}
+.catalogue-item .book:hover,
+.catalogue-item .book:focus {
+    color: var(--basic-white);
+    background-color: var(--basic-mid-brown);
+}
+
+/*Filter*/
+.filter-container {
+    background-color: var(--basic-blue);
+    color: var(--basic-white);
+    line-height: 21px;
+}
+.filter legend {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--basic-white);
+}
+
+.filter ul {
+    list-style: none;
+    line-height: 25px;
+}
+
+.filter-input-checkbox:hover,
+.filter-input-checkbox:focus {
+    color: var(--basic-white);
+}
+.filter-input-checkbox:disabled {
+    color: var(--checkbox);
+}
+
+.filter-button {
+    color: var(--basic-white);
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid var(--basic-white);
+}
+.filter-button:hover,
+.filter-button:active {
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+}
+
+/*Sorting*/
+.sort-results {
+    list-style: none;
+    font-size: 12px;
+}
+.sort-results a {
+    color: var(--basic-black);
+    mix-blend-mode: normal;
+    opacity: 0.3;
+    border-bottom: 1px dashed var(--basic-blue);
+}
+.sort-results a:hover,
+.sort-results a:focus {
+    color:var(--basic-blue);
+    opacity: 1;
+}
+.sort-results a:active,
+.sort-results a:visited {
+    color: var(--basic-black);
+    border-bottom: none;
+}
+
+.sort-results-current a{
+    color: var(--basic-blue);
+    opacity: 1;
+    border-bottom: none;
+}
+
+/*Visually hidden
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    …
+  }
+*/
