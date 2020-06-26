@@ -11,21 +11,15 @@
     <div class="body-wrapper">
       <header class="main-header">
         <nav class="main-navigation">
-          <div class="main-navigation-wrapper">
-            <div class="container"> 
-              <ul class="site-navigation left">
-                <li><a href="#">Информация</a></li>
-                <li><a href="#">Фото и видео</a></li>
-              </ul>
-              <a class="main-header-logo">
-                <img src="img/sedona-logo.svg" alt="Седона" width="138" height="70">
-              </a>
-              <ul class="site-navigation right">
-                <li><a href="#">Карта штата</a></li>
-                <li><a href="hotels.html">Гостиницы</a></li>
-              </ul>
-            </div>
-          </div>
+          <a class="main-header-logo">
+            <img src="img/sedona-logo.svg" alt="Седона" width="138" height="70">
+          </a>
+          <ul class="site-navigation">
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li><a href="hotels.html">Гостиницы</a></li>
+          </ul>
         </nav>
       </header>
       <main>
@@ -68,27 +62,27 @@
               </ul>
             </fieldset>
             <div class="filter-price">
-            <fieldset>
-              <legend>Стоимость в сутки (Р):</legend>
-              <div class="price-controls">
-                <label class="min-price">
-                от <input type="number" name="min-price" value="0">
-                </label>
-                <label class="max-price">
-                от <input type="number" name="max-price" value="3000">
-                </label>
-              </div>
-              <div class="range-filter">
-                <div class="range-controls">
-                  <div class="scale">
-                    <div class="bar"></div>
-                  </div>
+              <fieldset>
+                <legend>Стоимость в сутки (Р):</legend>
+                <div class="price-controls">
+                  <label class="min-price">
+                  от <input type="number" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">
+                  от <input type="number" name="max-price" value="3000">
+                  </label>
                 </div>
-                <div class="toggle toggle-min"></div>
-                <div class="toggle toggle-max"></div>
-              </div>
-            </fieldset>
-            <button class="filter-button" type="submit">Показать</button>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+              </fieldset>
+              <button class="filter-button" type="submit">Показать</button>
             </div>
           </form>
         </section>
@@ -168,33 +162,31 @@
         </section>
       </main>
       <footer class="main-footer">
-        <div class="container">
-          <section class="footer-contacts">
-            <h2 class="visually-hidden">Как с нами связаться</h2>
-            <p>#visitsedona <br>
-            Тел:<a href="tel:+74956660166"> +7(495)666-01-66</a>
-            </p>
-          </section>
-          <section class="footer-social">
-            <h2 class="visually-hidden">Мы в соцсетях</h2>
-            <ul>
-              <li>
-                <a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a>
-              </li>
-              <li>
-                <a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a>
-              </li>
-              <li>
-                <a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a>
-              </li>
-            </ul>
-          </section>
-          <section class="footer-copyright">
-            <p>Website by:
-              <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-            </p>
-          </section>
-        </div>
+        <section class="footer-contacts">
+          <h2 class="visually-hidden">Как с нами связаться</h2>
+          <p>#visitsedona <br>
+          Тел:<a href="tel:+74956660166"> +7(495)666-01-66</a>
+          </p>
+        </section>
+        <section class="footer-social">
+          <h2 class="visually-hidden">Мы в соцсетях</h2>
+          <ul>
+            <li>
+              <a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a>
+            </li>
+            <li>
+              <a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a>
+            </li>
+            <li>
+              <a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-copyright">
+          <p>Website by:
+            <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+          </p>
+        </section>
       </footer>
     </div>
   </body>
