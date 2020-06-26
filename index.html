@@ -11,27 +11,22 @@
     <div class="body-wrapper">
       <header class="main-header">
         <nav class="main-navigation">
-          <div class="main-navigation-wrapper">
-            <div class="container"> 
-              <ul class="site-navigation left">
-                <li><a href="#">Информация</a></li>
-                <li><a href="#">Фото и видео</a></li>
-              </ul>
-              <a class="main-header-logo">
-                <img src="img/sedona-logo.svg" alt="Седона" width="138" height="70">
-              </a>
-              <ul class="site-navigation right">
-                <li><a href="#">Карта штата</a></li>
-                <li><a href="hotels.html">Гостиницы</a></li>
-              </ul>
-            </div>
-          </div>
+          <a class="main-header-logo">
+            <img src="img/sedona-logo.svg" alt="Седона" width="138" height="70">
+          </a>
+          <ul class="site-navigation">
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li><a href="hotels.html">Гостиницы</a></li>
+          </ul>
         </nav>
       </header>
-      <main class="container">
+      <main>
         <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-        <section>
-          <div class="main-back"></div>
+        <section class="main-back">
+          <h2 class="visually-hidden">Welcome to the gorgeous Sedona!</h2>
+          <p class="visually-hidden">Because the Grand canyon sucks!</p>
         </section>
         <section class="features-promo">
           <h3>Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
@@ -40,38 +35,32 @@
         <section class="features-main">
           <h2 class="visually-hidden">Причины нас посетить</h2>
           <div class="features-blue-row">
-            <div class="features-text-left">
+            <div class="features-text">
               <h3>Настоящий городок</h3>
               <span>№1</span>
               <p>
               Седона - не аттракцион для туристов, там течет своя жизнь
               </p>
             </div>
-            <div class="features-image-right">
-              <img src="img/sedona-city.jpg" alt="Город Седона" width="800" height="256">
-            </div>
+            <div class="features-image-right"></div>
           </div>
-          <div class="features-white-row">
-            <ul class="features-list">
-              <li class="features-item">
-                <h3>Жилье</h3>
-                <p>Рекомендуем пожить с настоящем мотеле, все как в кино!</p>
-              </li>
-              <li class="features-item">
-                <h3>Еда</h3>
-                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-              </li>
-              <li class="features-item">
-                <h3>Сувениры</h3>
-                <p>Не только китайского, но и местного производства!</p>
-              </li>
-            </ul>
-          </div>
+          <ul class="features-list">
+            <li class="features-item with-icons">
+              <h3>Жилье</h3>
+              <p>Рекомендуем пожить с настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="features-item with-icons">
+              <h3>Еда</h3>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li class="features-item with-icons">
+              <h3>Сувениры</h3>
+              <p>Не только китайского, но и местного производства!</p>
+            </li>
+          </ul>
           <div class="features-blue-row">
-            <div class="features-image-left">
-              <img src="img/devils-bridge.jpg" alt="Мост Дьявола" width="800" height="256">
-            </div>
-            <div class="features-text-right">
+            <div class="features-image-left"></div>
+            <div class="features-text">
               <h3>Там есть Мост Дьявола</h3>
               <span>№2</span>
               <p>
@@ -79,31 +68,29 @@
               </p>
             </div>
           </div>
-          <div class="features-grey-row">
-            <ul class="features-list">
-              <li class="features-item">
-                <h3>Небольшая площадь</h3>
-                <span>№3</span>
-                <p>
-                Все достопримечательности находятся очень близко
-                </p>
-              </li>
-              <li class="features-item">
-                <h3>Красивая дорога</h3>
-                <span>№4</span>
-                <p>
-                Ехать в Седону из Лас-Вегаса совсем не скучно!
-                </p>
-              </li>
-              <li class="features-item">
-                <h3>Мало туристов</h3>
-                <span>№5</span>
-                <p>
-                Большинство едет в Гранд Каньон и толпится там
-                </p>
-              </li>
-            </ul>
-          </div>
+          <ul class="features-list">
+            <li class="features-item grey">
+              <h3>Небольшая площадь</h3>
+              <span>№3</span>
+              <p>
+              Все достопримечательности находятся очень близко
+              </p>
+            </li>
+            <li class="features-item grey">
+              <h3>Красивая дорога</h3>
+              <span>№4</span>
+              <p>
+              Ехать в Седону из Лас-Вегаса совсем не скучно!
+              </p>
+            </li>
+            <li class="features-item grey">
+              <h3>Мало туристов</h3>
+              <span>№5</span>
+              <p>
+              Большинство едет в Гранд Каньон и толпится там
+              </p>
+            </li>
+          </ul>
         </section>
         <section class="interested">
           <h2>Заинтересовались?</h2>
@@ -140,7 +127,6 @@
         </section>
       </main>
       <footer class="main-footer">
-        <div class="container">
           <section class="footer-contacts">
             <h2 class="visually-hidden">Как с нами связаться</h2>
             <p>#visitsedona <br>
@@ -166,7 +152,6 @@
               <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
             </p>
           </section>
-        </div>
       </footer>
     </div>
   </body>
