@@ -69,8 +69,6 @@ img {
 
 /*Main navigation*/
 .main-navigation {
-    display: flex;
-    flex-direction: column;
     color: var(--basic-black);  
 }
 .site-navigation {
@@ -165,8 +163,6 @@ img {
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
-    min-width: 470px;
-    margin-bottom: 50px;
 }
 .features-main h3 {
     font-size: 21px;
@@ -189,7 +185,7 @@ img {
 .features-item h3 {
     margin-top: 0px;
     margin-bottom: 25px;
-    padding: 0 140px;
+    padding: 0 120px;
 }
 .grey {
     background-color: var(--basic-lightgrey);
@@ -321,6 +317,8 @@ img {
 }
 .catalogue-item .rate {
     background-color: var(--basic-filling);
+    display: inline-block;
+    padding: 3px 12px;
 }
 .catalogue-item h3 {
     font-size: 21px;
@@ -357,7 +355,17 @@ img {
     width: 135px;
 }
 .item-card {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
     padding: 0 30px;
+}
+.item-name {
+    flex-basis: 100%;
+    padding: 0px;
+}
+.item-name h3 {
+    margin-bottom: 7px;
 }
 .item-name a {
     color: var(--basic-black);
@@ -370,26 +378,16 @@ img {
     color: var(--basic-black);
     opacity: 0.3;
 }
-.catalogue-item-descr {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    width: 110px;
+.item-description {
+    padding: 0px;
     vertical-align: top;
+    margin-right: 6px;
 }
-.catalogue-item-price {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    width: 142px;
-    vertical-align:top;
+.item-description p {
+    margin-top: 7px;
 }
 .rating {
     width: 110px;
-}
-.rate {
-    display: inline-block;
-    padding: 3px 12px;
 }
 
 /*Sorting*/
