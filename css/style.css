@@ -264,6 +264,7 @@ img {
 .search-body {
     display: none;
 }
+
 /*Filter*/
 .filter-container {
     background-color: var(--basic-blue);
