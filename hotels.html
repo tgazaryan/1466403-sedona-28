@@ -27,59 +27,61 @@
         <section class="filter-container">
           <h2 class="visually-hidden">Параметры поиска</h2>
           <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="filter-infrastructure">
-              <legend>Инфраструктура:</legend>
-              <ul>
-                <li>
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="pool" id="filter-swimming-pool" checked>
-                  <label for="filter-swimming-pool">Бассейн</label>
-                </li>
-                <li>
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
-                  <label for="filter-parking">Парковка</label>
-                </li>
-                <li>
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi"> 
-                  <label for="filter-wi-fi">Wi-Fi</label>  
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="filter-type">
-              <legend>Тип жилья:</legend>
-              <ul>
-                <li>
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
-                  <label for="filter-hotel"></label> Гостиница
-                </li>
-                <li>
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked> 
-                  <label for="filter-motel">Мотель</label> 
-                </li>
-                <li>
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="apart" id="filter-apartment" checked> 
-                  <label for="filter-apartment">Апартаменты</label> 
-                </li>
-              </ul>
-            </fieldset>
+            <div class="filter-list">
+              <fieldset class="filter-infrastructure">
+                <legend>Инфраструктура:</legend>
+                <ul>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="pool" id="filter-swimming-pool" checked>
+                    <label for="filter-swimming-pool">Бассейн</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
+                    <label for="filter-parking">Парковка</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi"> 
+                    <label for="filter-wi-fi">Wi-Fi</label>  
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="filter-type">
+                <legend>Тип жилья:</legend>
+                <ul>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
+                    <label for="filter-hotel">Гостиница</label> 
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked> 
+                    <label for="filter-motel">Мотель</label> 
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="apart" id="filter-apartment" checked> 
+                    <label for="filter-apartment">Апартаменты</label> 
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
             <div class="filter-price">
-              <fieldset>
-                <legend>Стоимость в сутки (Р):</legend>
-                <div class="price-controls">
-                  <label class="min-price">
-                  от <input type="number" name="min-price" value="0">
-                  </label>
-                  <label class="max-price">
-                  от <input type="number" name="max-price" value="3000">
-                  </label>
-                </div>
+              <fieldset class="filter-item">
+                <legend>Стоимость в сутки (р):</legend>
                 <div class="range-filter">
+                  <div class="price-controls">
+                    <label class="min-price">
+                    от <input type="number" name="min-price" value="0" step="100">
+                    </label>
+                    <label class="max-price">
+                    до <input type="number" name="max-price" value="3000" step="100">
+                    </label>
+                  </div>
                   <div class="range-controls">
                     <div class="scale">
                       <div class="bar"></div>
                     </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
                   </div>
-                  <div class="toggle toggle-min"></div>
-                  <div class="toggle toggle-max"></div>
                 </div>
               </fieldset>
               <button class="filter-button" type="submit">Показать</button>
@@ -100,8 +102,12 @@
             </ul>
           </div>
           <div class="sort-arrows">
-            <a></a>
-            <a href="#"></a>
+            <a class="arrow-up">
+              <svg width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+            </a>
+            <a class="arrow-down" href="#">
+              <svg width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+            </a>
           </div>
         </section>
         <section class="catalogue">
@@ -125,6 +131,12 @@
                 </div>
               </div>
               <div class="rating">
+                <div class="rating-icons">
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                </div>
                 <p class="rate">Рейтинг: 8,5</p>
               </div>
             </li>
@@ -134,7 +146,7 @@
               </div>
               <div class="item-card">
                 <div class="item-name">
-                  <h3 class="item-name"><a href="#">Desert Quail Inn</a></h3>
+                  <h3><a href="#">Desert Quail Inn</a></h3>
                 </div>
                 <div class="item-description">
                   <p>Мотель</p>
@@ -146,6 +158,11 @@
                 </div>
               </div>
               <div class="rating">
+                <div class="rating-icons">
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                </div>
                 <p class="rate">Рейтинг: 8,9</p>
               </div>
             </li>
@@ -167,6 +184,10 @@
                 </div>
               </div>
               <div class="rating">
+                <div class="rating-icons">
+                  <span class="star"></span>
+                  <span class="star"></span> 
+                </div>
                 <p class="rate">Рейтинг: 9,2</p>
               </div>
             </li>
