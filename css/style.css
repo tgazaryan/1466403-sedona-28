@@ -64,7 +64,10 @@ img {
     grid-template-rows: min-content 1fr min-content;
 }
 .body-wrapper {
-    position: absolute;
+    position: relative;
+    display: grid;
+    margin: 0 auto;
+    grid-template-rows: min-content 1fr min-content;
     background-color: var(--basic-white);
     width: 1200px;
     min-height: 100%;
@@ -77,8 +80,9 @@ img {
 }
 .main-header-logo {
     position: absolute;
-    left: 50%;
-    margin-left: -69px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
     width: 138px;
     height: 70px;
 }
@@ -89,8 +93,8 @@ img {
 }
 .site-navigation {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     margin: 0;
     padding: 15px 73px;
     list-style: none;
@@ -110,27 +114,27 @@ img {
 .site-navigation li {
     width: 25%;
 }
-.site-navigation li:nth-child(1),
-.site-navigation li:nth-child(2) {
+.text-left {
     text-align: left;   
 }
-.site-navigation li:nth-child(3),
-.site-navigation li:nth-child(4) {
+.text-right {
     text-align: right;
 }
 
 /*Main footer*/
 .main-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 35px 100px;
     color: var(--basic-black);
     background-color: var(--footer-back);
     margin: 0px;
+}
+.index{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
 }
 .footer-contacts {
     margin: 0px;
@@ -155,7 +159,7 @@ img {
 .footer-social ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
     padding: 0;
     list-style:none;
@@ -176,6 +180,7 @@ img {
 .copyright-button:active path {
     fill: var(--icons-active);
 }
+
 /*Social button*/
 .social-button {
     display: flex;
@@ -252,37 +257,27 @@ img {
 .with-icons p { 
     padding: 0 73px;    
 }
-.accomodation::before {
-    position: absolute;
-    top:60px;
-    left: 50%;
-    margin-left: -37.5px;
+.icons::before {
     display: block;
+    position: absolute;
     content: "";
+    left: 50%;
+    transform: translate(-50%);
+    top: 60px;
+}
+.accomodation::before {
     width: 72px;
     height: 75px;
     background-image: url("../img/icon-1.svg");
     background-repeat: no-repeat;
 }
 .food::before {
-    position: absolute;
-    top:61px;
-    left: 50%;
-    margin-left: -37.5px;
-    display: block;
-    content: "";
     width: 75px;
     height: 70px;
     background-image: url("../img/icon-3.svg");
     background-repeat: no-repeat;
 }
 .souveniers::before {
-    position: absolute;
-    top:55px;
-    left: 50%;
-    margin-left: -32px;
-    display: block;
-    content: "";
     width: 64px;
     height: 77px;
     background-image: url("../img/icon-2.svg");
@@ -327,21 +322,22 @@ img {
     background-image: url('../img/map.png');
 }
 .interested {
-    text-align: center;
     padding-top: 60px;
 }
-.interested h2 {
+.offer {
+    text-align: center;
+    padding: 0 370px;
+    margin-bottom: 45px;
+}
+.offer h2 {
     font-size: 30px;
     font-weight: 700;
     line-height: 24px;
     margin-bottom: 39px;
 }
-.interested p {
-    margin-bottom: 45px;
-    padding: 0 380px;
-}
 .search-form {
     position: relative;
+    margin: 0 auto;
     padding: 0 316px;
 }
 .search-form .search-1 {
@@ -362,28 +358,24 @@ img {
 .search-body {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     position: absolute;
-    left: 315px;
-    right: 316px;
-    margin: 0;
+    width: 458px;
     padding: 60px 55px;
+    margin: 0;
+    left: 50%;
+    transform: translate(-50%);
     font-weight: 700;
     color: var(--basic-black);
     background-color: var(--basic-white);
 }
 .search-item {
     position: relative;
-    width: auto;
-    padding: 6px 0;
-}
-.search-item:nth-child(1),
-.search-item:nth-child(2) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
-}
-.search-item:nth-child(3),
-.search-item:nth-child(4) {
-    width: 50%;
+
 }
 .search-item input {
     position: relative;
@@ -395,6 +387,7 @@ img {
     border: none;
     box-sizing: border-box;
     padding: 6px 10px;
+    height: 38px;
 }
 .search-item input:hover {
     background-color: var(--input-hover);
@@ -402,12 +395,6 @@ img {
 .search-item input:active {
     background-color: var(--basic-white);
     border: 2px solid var(--input-border);
-}
-.date input {
-    position: absolute;
-    width: 345px;
-    top: 0px;
-    right: 0px;
 }
 .calendar {
     position: absolute;
@@ -424,24 +411,21 @@ img {
 .calendar:active {
     fill: var(--basic-blue);
 }
-.people {
-    position: relative;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+.label {
+    width: 112px;
 }
-.input-form {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    display: grid;
-    grid-template-columns: min-content 1fr min-content;
-    width: 114px;
-    height: 38px;
-}
-.input-form input {
-    width: 38px;
+.number {
+    width: 40px;
     text-align: center;
+}
+.booking-date {
+    flex-grow: 1;
+}
+.people {
+    width: 50%;
+}
+.input-wrapper {
+    display: flex;
 }
 .minus {
     display: flex;
@@ -637,7 +621,6 @@ img {
     display: grid;
     grid-template-columns: min-content 1fr min-content;
     padding: 0 73px;
-    padding-bottom: 30px;
 }
 .catalogue-item .rate {
     background-color: var(--basic-filling);
@@ -711,9 +694,14 @@ img {
     margin-top: 7px;
 }
 .rating {
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     width: 110px;
     padding: 0px;
+}
+.rating-icons {
+    margin-bottom: 47px;
 }
 .star {
     display: inline-block;
@@ -723,15 +711,7 @@ img {
     margin-right: 4px;
     background-image: url('../img/star.svg');
 }
-.rating-icons {
-    position: absolute;
-    right: 0;
-}
-.rate{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
+
 /*Sorting*/
 .sorting {
     display: grid;
@@ -798,11 +778,7 @@ img {
 .arrow-down path {
     fill: var(--basic-blue);
 }
-
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -816,13 +792,13 @@ input[type="radio"].visually-hidden {
 }
 
 /* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+.number::-webkit-outer-spin-button,
+.number::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
 /* Firefox */
-input[type=number] {
+.number {
   -moz-appearance: textfield;
 }
