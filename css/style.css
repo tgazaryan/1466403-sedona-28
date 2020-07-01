@@ -56,12 +56,7 @@ img {
     height:100%;
 }
 .page-body {
-    position: relative;
-    min-height: 100%;
-    width:1200px;
-    display: grid;
-    margin: 0 auto;
-    grid-template-rows: min-content 1fr min-content;
+    height: 100%;
 }
 .body-wrapper {
     position: relative;
@@ -264,24 +259,22 @@ img {
     left: 50%;
     transform: translate(-50%);
     top: 60px;
+    background-repeat: no-repeat;
 }
 .accomodation::before {
     width: 72px;
     height: 75px;
-    background-image: url("../img/icon-1.svg");
-    background-repeat: no-repeat;
+    background-image: url("../img/icon-1.svg");  
 }
 .food::before {
     width: 75px;
     height: 70px;
     background-image: url("../img/icon-3.svg");
-    background-repeat: no-repeat;
 }
 .souveniers::before {
     width: 64px;
     height: 77px;
     background-image: url("../img/icon-2.svg");
-    background-repeat: no-repeat;
 }
 .features-blue-row {
     display: flex;
@@ -384,18 +377,21 @@ img {
     text-transform: uppercase;
     color: var(--basic-black);
     background-color: var(--basic-filling);
-    border: none;
+    border: 2px solid var(--basic-filling);
     box-sizing: border-box;
     padding: 6px 10px;
     height: 38px;
 }
 .search-item input:hover {
     background-color: var(--input-hover);
+    border: 2px solid var(--input-hover);
 }
-.search-item input:active {
+.search-item input:active,
+.search-item input:focus {
     background-color: var(--basic-white);
-    border: 2px solid var(--input-border);
+    outline: 2px solid var(--input-border);
 }
+
 .calendar {
     position: absolute;
     top: 6px;
