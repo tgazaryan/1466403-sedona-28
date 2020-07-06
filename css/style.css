@@ -95,9 +95,19 @@ img {
     flex-wrap: wrap;
     justify-content: flex-start;
     margin: 0;
-    padding: 17px 73px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 17px;
+    padding-bottom: 17px;
     list-style: none;
 }
+.site-navigation li:nth-child(4n+1) {
+    padding-left: 73px;
+}
+.site-navigation li:nth-child(4n+4) {
+    padding-right: 73px;
+}
+
 .site-navigation a {
     color: var(--basic-black);
     font-weight: 700;
@@ -112,6 +122,7 @@ img {
 }
 .site-navigation li {
     width: 25%;
+    box-sizing: border-box;
 }
 .text-left {
     text-align: left;   
@@ -124,7 +135,7 @@ img {
 .main-footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 0 100px;
+    padding: 0 54px;
     color: var(--basic-black);
     background-color: var(--footer-back);
     margin: 0px;
@@ -139,11 +150,11 @@ img {
     align-self: start;
     justify-content: center;
     font-size: 21px;
+    text-align: center;
     line-height: 26px;
     font-weight: 700;
     margin: 0px;
     margin-top: 23px;
-    padding-left: 31px;
 }
 .hashtag {
     display: inline-block;
@@ -179,12 +190,11 @@ img {
     flex-wrap: nowrap;
     justify-content: center;
     margin: 0;
-    justify-self: end;
     margin-top: 38px;
 }
 .footer-copyright p {
     margin-top: 13px;
-    margin-right: 9px;
+    margin-right: 8px;
 }
 .copyright-button {
     margin: 0px;
@@ -265,7 +275,7 @@ img {
     padding-bottom: 41px;
 }
 .grey p {
-    padding: 0 96px;
+    padding: 0 60px;
     margin-top: 23px;
 }
 .grey h3 {
@@ -278,7 +288,7 @@ img {
     padding-bottom: 68px;
 }
 .with-icons p { 
-    padding: 0 73px;    
+    padding: 0 50px;    
 }
 .icons::before {
     display: block;
@@ -300,6 +310,7 @@ img {
     background-image: url('../img/icon-3.svg');
 }
 .souveniers::before {
+    top: 56px;
     width: 64px;
     height: 77px;
     background-image: url('../img/icon-2.svg');
@@ -334,7 +345,7 @@ img {
 .features-text p {
     margin-top: 25px;
     margin-bottom: 0;
-    padding: 0 50px;
+    padding: 0 40px;
 }
 
 /*Search*/
@@ -348,14 +359,15 @@ img {
 .offer {
     text-align: center;
     padding: 0 370px;
-    margin-bottom: 38px;
+    margin-bottom: 45px;
     line-height: 24px;
 }
 .offer h2 {
     font-size: 30px;
     font-weight: 700;
     line-height: 24px;
-    margin-bottom: 34px;
+    margin-top: 20px;
+    margin-bottom: 32px;
 }
 .search-form {
     position: relative;
@@ -667,23 +679,26 @@ img {
     border: 2px solid var(--basic-white);
     border-radius: 2px;
     text-align: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 .price-controls input {
     width: 40px;
     border: none;
     background: transparent;
     color: var(--basic-white);
+    text-align: left;
 }
 .price-controls input:focus {
     outline: none;
 }
 .min-price {
     width: 50%;
-    padding: 6px 30px;
+    padding-left: 27px;
 }
 .max-price {
     width: 50%;
-    padding: 6px 30px;
+    padding-left: 10px;
 }
 .min-price::after {
     position: absolute;
@@ -798,7 +813,7 @@ img {
     justify-content: flex-end;
     align-self: start;
     width: 110px;
-    padding-top: 25px;
+    padding-top: 28px;
     padding-bottom: 24px;
     margin: 0px;
 }
@@ -897,7 +912,7 @@ img {
    from {top: 0px;}
    to {top: 100%;}
   }
-  
+
 @keyframes shake {
   0%,
   100% {
