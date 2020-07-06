@@ -103,31 +103,31 @@
           </div>
           <div class="search-form">
             <a class="btn search-1" href="#">Поиск гостиницы в Седоне</a>
-            <form class="search search-body" action="https://echo.htmlacademy.ru" method="post">
+            <form class="search-body" action="https://echo.htmlacademy.ru" method="post">
               <p class="search-item">
                 <label class="label" for="arrival-date">Дата заезда:</label>
                 <input class="booking-date" id="arrival-date" type="text" name="date" placeholder="24 апреля 2017">
-                <button class="btn calendar" type="button">
+                <button class="btn calendar" type="button" aria-label="Выбрать дату">
                   <svg width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
                 </button>
               </p>
               <p class="search-item">
                 <label class="label" for="departure-date">Дата выезда:</label>
                 <input class="booking-date" id="departure-date" type="text" name="date" placeholder="4 июля 2017">
-                <button class="btn calendar" type="button">
+                <button class="btn calendar" type="button" aria-label="Выбрать дату">
                   <svg width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
                 </button>
               </p>
               <p class="search-item people">
                 <label class="label" for="adult">Взрослые:</label>
                 <span class="input-wrapper">
-                  <button class="minus" type="button">
+                  <button class="minus" type="button" aria-label="Убавить">
                     <svg width="12" height="3" viewBox="0 0 12 3" fill="none">
                     <rect width="12" height="3" fill="#A9A9A9"/>
                     </svg>
                   </button>
                   <input class="number" id="adult" type="number" value="2">
-                  <button class="add" type="button">
+                  <button class="add" type="button" aria-label="Добавить">
                     <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
                     </svg>
@@ -137,13 +137,13 @@
               <p class="search-item people">
                 <label class="label children" for="child">Дети:</label>
                 <span class="input-wrapper">
-                  <button class="minus" type="button">
+                  <button class="minus" type="button" aria-label="Убавить">
                     <svg width="12" height="3" viewBox="0 0 12 3" fill="none">
                     <rect width="12" height="3" fill="#A9A9A9"/>
                     </svg>
                   </button>
                   <input class="number" id="child" type="number" value="0">
-                  <button class="add" type="button">
+                  <button class="add" type="button" aria-label="Добавить">
                     <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
                     </svg>
