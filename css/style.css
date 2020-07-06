@@ -388,13 +388,10 @@ img {
     background-color: var(--basic-dark-brown);
     color:var(--button-active);
 }
-.search-error {
-    animation: shake 0.6s;
-}
-.search {
+.search-body{
     display: none;
 }
-.search-body {
+.search-body-show {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -608,6 +605,9 @@ img {
     width: 27px;
     height: 23px;
     fill: var(--checkbox);
+}
+.filter-input-checkbox:focus + label::before {
+    outline: none;
 }
 .filter-button {
     position: absolute;
@@ -912,29 +912,6 @@ img {
    from {top: 0px;}
    to {top: 100%;}
   }
-
-@keyframes shake {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: translateX(-10px);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    transform: translateX(10px);
-  }
-}
-
 
 /*Visually hidden*/
 .visually-hidden {
