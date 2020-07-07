@@ -158,6 +158,7 @@ img {
 }
 .hashtag {
     display: inline-block;
+    vertical-align: top;
     margin-bottom: 9px;
 }
 .footer-contacts p {
@@ -731,7 +732,8 @@ img {
     text-align: center;
     background-color: var(--basic-filling);
     display: inline-block;
-    margin-top: 41px;
+    vertical-align: top;
+    margin-top: 43px;
     margin-bottom: 0px;
     padding: 3px 12px;
 }
@@ -825,6 +827,7 @@ img {
 }
 .star {
     display: inline-block;
+    vertical-align: top;
     width: 18px;
     height: 17px;
     background-image: url('../img/star.svg');
