@@ -399,13 +399,16 @@ img {
     width: 458px;
     padding: 54px 55px;
     margin: 0;
-    left: 50%;
-    transform: translate(-50%);
+    left: 315px;
+    transform: 315px;
     font-weight: 700;
     line-height: 26px;
     color: var(--basic-black);
     background-color: var(--basic-white);
-    animation: mymove 0.6s;
+    animation: show 0.6s;
+}
+.form-error {
+    animation: shake 0.6s;
 }
 .search-item {
     position: relative;
@@ -908,10 +911,32 @@ img {
 }
 
 /*Animations*/
-@keyframes  mymove {
+@keyframes  show {
    from {top: 0px;}
    to {top: 100%;}
   }
+
+  @keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
 
 /*Visually hidden*/
 .visually-hidden {
