@@ -7,6 +7,7 @@ var departureDate = searchForm.querySelector(".departure");
 searchButton.addEventListener("click", function (evt) {
     evt.preventDefault();
     searchForm.classList.toggle("search-body-show");
+    searchForm.classList.remove("form-error");
 });
 searchForm.addEventListener("submit", function (evt) {
   if (!arrivalDate.value||!departureDate.value) {
